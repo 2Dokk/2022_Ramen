@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { RamenImg } from "../public/ramen.png";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 
 const Ramen = () => {
   return (

@@ -1,5 +1,9 @@
 .introButton {
   background-color: lightsalmon !important;
+  width: 20vh;
+  height: 8vh;
+  font-size: 1.5rem !important;
+  font-family: "Jua", sans-serif !important;
 }
 .introButtonRight {
   text-align: right;
@@ -11,4 +15,7 @@
 }
 .rightStart {
   margin-left: auto;
+}
+.introContainer {
+  margin-top: 5%;
 }
