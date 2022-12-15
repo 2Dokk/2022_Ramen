@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import Link from "next/link";
+import Image from "next/image";
 
 const IntroRamen = () => {
   const [open0, setOpen0] = useState(false);
@@ -95,6 +96,15 @@ const IntroRamen = () => {
               </Card>
             </div>
           </Collapse>
+        </div>
+        <div className="mainImage" id="introImg">
+          <Image
+            src="/../public/ramen.png"
+            alt="ramen"
+            priority
+            width={500}
+            height={500}
+          />
         </div>
       </div>
     </>

@@ -35,14 +35,16 @@
   float: left;
 }
 #open {
+  z-index: 5;
   font-size: 1.2rem;
   font-family: "Jua", sans-serif;
-  width: 5vw;
+  width: 5vh;
   margin: 0 !important;
 }
 #close {
+  z-index: 5;
   font-family: "Jua", sans-serif;
   font-size: 1.2rem;
-  width: 5vw;
+  width: 5vh;
   margin: 0 !important;
 }

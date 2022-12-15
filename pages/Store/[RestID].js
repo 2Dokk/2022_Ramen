@@ -15,7 +15,6 @@ const Rest = (posts) => {
     lat: posts.posts?.results[0].geometry.location.lat,
     lng: posts.posts?.results[0].geometry.location.lng,
   };
-  console.log(props.lat, props.lng);
   return (
     <div>
       <div id="bg">
