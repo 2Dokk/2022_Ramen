@@ -3,8 +3,11 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "50%",
+  height: "30%",
   left: "0",
+  zindex: "100",
+  top: "70vh",
+  position: "absolute",
 };
 
 const MyComponent = (props) => {

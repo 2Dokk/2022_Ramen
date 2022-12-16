@@ -9,8 +9,9 @@ const Rest = (posts) => {
   console.log(posts.posts?.results[0].photos[0].photo_reference);
   console.log(posts.posts?.results[0]);
   const address = posts.posts?.results[0].formatted_address;
-  const openingHours = posts.posts?.results[0].opening_hours.open_now;
+  const openingHours = posts.posts?.results[0].opening_hours?.open_now;
   const img = `/api/photo?maxwidth=400&photo_reference=${posts.posts?.results[0].photos[0].photo_reference}&key=AIzaSyDNikTB4dl2anKMqtQRQCEw9eTjwtAw_j0`;
+  const rating = posts.posts?.results[0].rating;
   const props = {
     lat: posts.posts?.results[0].geometry.location.lat,
     lng: posts.posts?.results[0].geometry.location.lng,
@@ -21,7 +22,7 @@ const Rest = (posts) => {
         <div id="infoContainer">
           <div className="restTitle">{posts.posts?.results[0].name}</div>
           <div className="restAddress">{address}</div>
-
+          <div className="restAddress rating">평점: {rating}</div>
           <div className="box">
             <img className="profile" id="image" src={img} alt="2" />
           </div>
@@ -54,6 +55,10 @@ export const getStaticPaths = async () => {
     "566라멘",
     "하나라멘",
     "미츠루",
+    "츠케루",
+    "혼네",
+    "오레노라멘",
+    "세상끝의라멘",
   ];
 
   return {
