@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -25,10 +26,12 @@ const IntroRamen = () => {
           <Collapse in={open0} dimension="width">
             <div id="example-collapse-text">
               <Card body style={{ width: "400px" }}>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
+                라멘(ラーメン, Ramen)은 중국의 수타 탕면인 라몐(拉面)이 일본에서
+                현지화되어 만들어진 일본식 중화 요리이다. 중화 요리로 시작해서
+                인기를 얻은 면요리라는 점에서 한국의 짜장면과 유사한 측면이
+                있다. 게다가 짜장면은 한국에선 중국요리 취급을 받지만 외국인들은
+                한식으로 여기듯이 라멘도 일본에선 중국요리 취급하지만 한국인
+                같은 외국인들은 일본요리로 여긴다.
               </Card>
             </div>
           </Collapse>
